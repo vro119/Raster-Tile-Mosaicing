@@ -24,8 +24,9 @@ https://shorturl.at/RwD7y
 6. **Resample Tiles**: Resample all tiles to average resolution using disk-based approach to save RAM.
 7. **Mosaic Creation**: Use gdal_merge.py to merge resampled tiles into a single GeoTIFF.
 8. **Install GDAL (if needed)**: The notebook checks and installs GDAL in Colab.
-9. **Copy Output to Drive**: Run the final cell to copy the `cloudless_mosaic.tif` to your Google Drive.
+9. **Copy Output to Drive**: Run the final cell to copy the `combined_mosaic.tif` to your Google Drive.
 
 ### 1.3. Summary of Results
 The workflow successfully produces a seamless, cloudless mosaic (`cloudless_mosaic.tif`) by resampling input GeoTIFF tiles to a uniform average resolution and merging them using GDAL. The output is a single georeferenced GeoTIFF with consistent CRS and resolution, suitable for visualization and further analysis. The disk-based processing ensures efficiency in memory-constrained environments like Colab, and the final mosaic is copied to Google Drive for easy retrieval.
+
 
